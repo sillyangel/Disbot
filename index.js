@@ -3,12 +3,14 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.send('Hello Express app!')
+  res.send('ben ben')
 });
 
 app.listen(3000, () => {
   console.log('server started');
 });
+
+// Discord Bot
 
 const Discord = require("discord.js");
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
