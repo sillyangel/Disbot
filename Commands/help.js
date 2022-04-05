@@ -4,7 +4,7 @@ exports.run = (client, message, args) => {
   const embed = new Discord.MessageEmbed()
   .setTitle(`Total Commands: ${client.commands.size}`)
   .setDescription(commands)
-  .setFooter("My prefix is b")
+  .setFooter("My prefix is ~")
   message.channel.send({embeds:[embed]})
 }
 

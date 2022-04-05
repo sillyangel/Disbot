@@ -1,0 +1,1 @@
+alert("ayo welcome to banana-corp bookmarklet!")
