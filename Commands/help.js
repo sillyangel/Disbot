@@ -4,6 +4,7 @@ exports.run = (client, message, args) => {
   const embed = new Discord.MessageEmbed()
   .setTitle(`Total Commands: ${client.commands.size}`)
   .setDescription(commands)
+  .setColor("BLUE")
   .setFooter("My prefix is ~")
   message.channel.send({embeds:[embed]})
 }

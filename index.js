@@ -10,8 +10,6 @@ app.listen(3000, () => {
   console.log('server started');
 });
 
-// Discord Bot
-
 const Discord = require("discord.js");
 const client = new Discord.Client({intents: ["GUILDS", "GUILD_MESSAGES"]});
 const fs = require("fs");
@@ -46,5 +44,9 @@ client.on('ready', () => {
     client.user.setActivity("Banana-corp.tk")});
    // This Will Show Playing : !Help or WhatEver You Want//
 
+
+client.on('ready', () => {
+  console.log("Bot is Online and Runing")
+})
 
 client.login(process.env.DB);
